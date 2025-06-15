@@ -1,0 +1,200 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+nav {
+  background: #ae00ffe7;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+header {
+  background: #d70cff;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.tentang, .game {
+  padding: 0px;
+  max-width: 800px;
+  margin: auto;
+}
+.game {
+  background-color: #fff8dc;
+  border: 2px dashed #ffa500;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+#guessInput {
+  width: 50px;
+  padding: 5px;
+}
+.konten {
+  max-width: 500px;    /* Atur lebar maksimum */
+  margin: 0 auto;       /* Tengah halaman */
+  padding: 20px 40px;   /* Atas-bawah 20px, kiri-kanan 40px */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-left: 50px; /* Geser ke kiri */
+}
+.footer-container {
+  background-color: #333;
+  padding: 20px 0;
+}
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+.center-text {
+  text-align: center;
+}
+
+.fitur {
+  background-color: #f0f8ff;       /* biru muda lembut */
+  padding: 30px 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#map {
+  width: 80%;             /* Tidak terlalu besar agar bisa ditengah */
+  max-width: 800px;
+  height: 400px;
+  margin: 20px auto;      /* INI YANG MENENGAHKAN */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* Biar ke kiri */
+}
+.btn-wa {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ae00ff; /* warna latar navbar */
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.beranda {
+  background-color: #ff73a2; /* pink */
+}
+.galeri {
+  background-color: #637aff; /* biru tua */
+}
+.lokasi {
+  background-color: #63ffef; /* hijau toska */
+}
+.latihan {
+  background-color: #ffc267; /* oranye */
+}
+.wa {
+  background-color: #25d366; /* hijau WhatsApp */
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 10px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.home-btn {
+  background-color: #007BFF; /* Biru */
+}
+.home-btn:hover {
+  background-color: #0056b3;
+}
+.gallery-btn {
+  background-color: #6f42c1; /* Ungu */
+}
+.gallery-btn:hover {
+  background-color: #5936a2;
+}
+
+.location-btn {
+  background-color: #fd7e14; /* Oranye */
+}
+.location-btn:hover {
+  background-color: #e96500;
+}
+
+.game-btn {
+  background-color: #20c997; /* Teal */
+}
+.game-btn:hover {
+  background-color: #199e7c;
+}
+
+.nav-btn:hover {
+  background-color: #3da645;
+}
+.whatsapp-btn {
+  background-color: #25D366;
+}
+.whatsapp-btn:hover {
+  background-color: #1ebd5a;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* penting agar responsif */
+  margin: 20px;
+}
+.product {
+  text-align: right;
+  background-color: #fff8dc;
+  padding: 45px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 160px;
+}
+
+

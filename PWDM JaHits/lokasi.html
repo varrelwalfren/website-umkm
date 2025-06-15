@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lokasi UMKM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+ <nav class="navbar">
+  <a class="nav-link beranda" href="index.html">Beranda</a>
+  <a class="nav-link galeri" href="gallery.html">Galeri</a>
+  <a class="nav-link lokasi" href="lokasi.html">Lokasi</a>
+  <a class="nav-link latihan" href="latihan.html">Game</a>
+  <a class="nav-link wa" href="https://wa.me/6285893088315" target="_blank">Hubungi Kami di WhatsApp</a>
+</nav>
+
+  <h2 class="center-text">Lokasi Kami di Google Maps</h2>
+
+  <div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6211897011735!2d106.80246737425279!3d-6.44266336299826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e971d947e0bf%3A0x78ad9db57d7f142b!2sPerumahan%20Permata%20Depok!5e0!3m2!1sid!2sid!4v1750019580017!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  <script>
+    function initMap() {
+      const lokasiUMKM = { lat: -6.2, lng: 106.816666 }; // Ubah sesuai lokasi
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: lokasiUMKM
+      });
+      new google.maps.Marker({
+        position: lokasiUMKM,
+        map,
+        title: "UMKM Jajanan Hits Bingits"
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
+</body>
+</html>
+

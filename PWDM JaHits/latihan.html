@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Tebak Angka</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 10px;
+      background-color: #f7f7f7;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    .result {
+      font-weight: bold;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  
+ <nav class="navbar">
+  <a class="nav-link beranda" href="index.html">Beranda</a>
+  <a class="nav-link galeri" href="gallery.html">Galeri</a>
+  <a class="nav-link lokasi" href="lokasi.html">Lokasi</a>
+  <a class="nav-link latihan" href="latihan.html">Game</a>
+  <a class="nav-link wa" href="https://wa.me/6285893088315" target="_blank">Hubungi Kami di WhatsApp</a>
+</nav>
+
+  <h1>Game Tebak Angka!</h1>
+  <p>Tebak angka dari 1 hingga 10</p>
+
+  <input type="number" id="tebakan" min="1" max="10" placeholder="Masukkan angka...">
+  <button onclick="cekJawaban()">Cek</button>
+  <p class="result" id="hasil"></p>
+
+  <script>
+    const angkaBenar = Math.floor(Math.random() * 10) + 1;
+
+    function cekJawaban() {
+      const input = document.getElementById('tebakan').value;
+      const hasil = document.getElementById('hasil');
+
+      if (input == angkaBenar) {
+        hasil.textContent = "Keyeeeeenn!! 🎉";
+        hasil.style.color = "green";
+      } else {
+        hasil.textContent = "Kulang Beluntungg 😅";
+        hasil.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
+
